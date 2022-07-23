@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --soft-blue: #8bacda;
+  --cyan: #00fff7;
+  --very-dark-blue-main-bg: #0d192b;
+  --very-dark-blue-card-bg: #14253d;
+  --very-dark-blue-line: #2f415b;
+  --white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 0.5rem;
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+  background-color: var(--very-dark-blue-main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  background-color: var(--very-dark-blue-card-bg);
+  max-width: 22.5%;
+  border-radius: 0.5rem;
+  margin: 1.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  flex-direction: column;
+  margin: 1.35rem;
+}
+
+.eth-img {
+  border-radius: 0.5rem;
+}
+
+.image-title {
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-block-end: 1.2rem;   
+  transition: background-color 200ms;
+  cursor: pointer;
+}
+
+.icon-view {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  max-width: 12.5%;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 200ms;
+}
+
+.image-title:hover .icon-view {
+  opacity: 1;
+}
+
+.image-title:hover {
+  background-color: var(--cyan);
+}
+
+.eth-img:hover {
+  opacity: 0.5;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--white);
+  margin-block-end: 0.8rem;
+  transition: color 200ms;
+}
+
+.title:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.description {
+  color: var(--soft-blue);
+  font-weight: 400;
+  font-size: 1.03rem;
+  margin-block-end: 1.1rem;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-block-end: 1rem;
+  margin-block-end: 0.9rem;
+  border-bottom: 0.1rem solid #2f415b;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+  color: var(--cyan);
+  font-size: 0.9rem;
+}
+
+.eth-icon {
+  max-width: 21.5%;
+  padding-inline-end: 0.3rem;
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  color: var(--soft-blue);
+  font-size: 0.9rem;
+}
+
+.icon-clock {
+  align-self: center;
+  padding-block-end: 0.11rem;
+  padding-inline-end: 0.25rem;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  color: var(--soft-blue);
+  font-size: 0.9rem;
+}
+
+.name {
+  color: var(--white);
+  padding-inline-start: 0.15rem;
+  transition: color 200ms;
+}
+
+.name:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.creator-icon {
+  max-width: 10%;
+  margin-inline-end: 0.9rem;
+  border: 1px solid #fff;
+  border-radius: 100vmax;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    max-width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .container {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 100%;
+  }
+}
