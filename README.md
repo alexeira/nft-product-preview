@@ -20,6 +20,6 @@ The most difficult part of the challenge was to create the overlay for the image
 
 ![1440px Desktop Overlay](./screenshots/1440px-overlay.png)
 
-## 375px Mobile
+### 375px Mobile
 
 ![375px Mobile](./screenshots/375px.png)
